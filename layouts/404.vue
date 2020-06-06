@@ -1,7 +1,7 @@
 <template>
   <section class="theme-container" v-if="!noFoundPageByTencent">
     <article class="content">
-      <h1>404</h1>
+      <h1>404 Page Not Found!</h1>
       <blockquote>{{ getMsg() }}</blockquote>
       <a class="home-link" href="/">Take me home.</a>
     </article>
@@ -10,10 +10,10 @@
 
 <script>
 const msgs = [
-  `There's nothing here.`,
-  `How did we get here?`,
-  `That's a Four-Oh-Four.`,
-  `Looks like we've got some broken links.`
+  `Fun Fact: MenuDocs was founded in 2018 by Connor.`,
+  `Fun Fact: We're here to stay, the end game doesnt exist. Many more games to play!`,
+  `Fun Fact: We're happily sponsored by Oxide Hosting, they're one of the best sponsors any organisations could ask for! `,
+  `Fun Fact: You found a dead end.`
 ]
 
 export default {

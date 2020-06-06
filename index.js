@@ -35,14 +35,14 @@ module.exports = (options, ctx) => ({
           id: 'tags',
           keys: ['tags'],
           path: '/tag/',
-          layout: 'Tags',
+          layout: 'tag',
           scopeLayout: 'Tag'
         },
         {
           id: 'categories',
           keys: ['categories'],
           path: '/categories/',
-          layout: 'Categories',
+          layout: 'category',
           scopeLayout: 'Category'
         },
         {

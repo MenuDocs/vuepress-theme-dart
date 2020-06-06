@@ -9,7 +9,7 @@ Save New Duplicate & Edit Just Text
         v-for="(author, index) in pageInfo.frontmatter.authors"
         :key="index"
         class="author-item"
-        @click="goToAuthor(author)">{{ withComma(index) }}</span>
+        @click="goToAuthor(author)">{{ withComma(index, 'authors') }}</span>
     </i>
     <i
       v-if="pageInfo.frontmatter.date"
@@ -31,7 +31,7 @@ Save New Duplicate & Edit Just Text
         :key="subIndex"
         class="tag-item"
         :class="{ 'active': currentTag == tag }"
-        @click="goToTags(tag)">{{tag}}</span>
+        @click="goToTags(tag)">{{ withComma(subIndex, 'tags') }}</span>
     </i>
   </div>
 </template>
@@ -96,8 +96,8 @@ export default {
     goToAuthor (author) {
       window.open(`https://github.com/${author}`)
     },
-    withComma (index) {
-      const names = this.pageInfo.frontmatter.authors;
+    withComma (index, type) {
+      const names = this.pageInfo.frontmatter[type];
       if(index !== names.length-1) return `${names[index]},`;
       else return names[index];
     }
