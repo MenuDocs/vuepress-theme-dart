@@ -240,7 +240,6 @@ function flatten (items, res) {
   .page-title
     max-width: $contentWidth;
     margin: 0 auto;
-    padding: 1rem 2.5rem;
     color var(--text-color)
   .page-edit
     @extend $wrapper
