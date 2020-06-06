@@ -1,0 +1,60 @@
+{
+  "_from": "vuepress-theme-reco@^1.4.6",
+  "_id": "vuepress-theme-reco@1.4.6",
+  "_inBundle": false,
+  "_integrity": "sha512-531G+K/DVHIauCYhlgb5HJI6L5sYgUMLX0fi9v/x0naDK8WzzQwAQ74xdMnm4mcKC83wY7U/MX5lMFCpxc8QuQ==",
+  "_location": "/vuepress-theme-reco",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "vuepress-theme-reco@^1.4.6",
+    "name": "vuepress-theme-reco",
+    "escapedName": "vuepress-theme-reco",
+    "rawSpec": "^1.4.6",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.6"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vuepress-theme-reco/-/vuepress-theme-reco-1.4.6.tgz",
+  "_shasum": "4753d670cf8ef01660369688725c5e71564518d3",
+  "_spec": "vuepress-theme-reco@^1.4.6",
+  "_where": "E:\\Coding\\VuePress\\MenuDocs_Guide",
+  "author": {
+    "name": "reco_luan"
+  },
+  "bugs": {
+    "url": "https://github.com/vuepress-reco/vuepress-theme-reco/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-back-to-top": "^1.4.0",
+    "@vuepress-reco/vuepress-plugin-comments": "^1.4.6",
+    "@vuepress-reco/vuepress-plugin-loading-page": "^1.4.0",
+    "@vuepress-reco/vuepress-plugin-pagation": "^1.4.6",
+    "@vuepress/plugin-blog": "1.9.2",
+    "@vuepress/plugin-medium-zoom": "1.5.0",
+    "docsearch.js": "2.6.3",
+    "md5": "2.2.1",
+    "vue-click-outside": "1.1.0"
+  },
+  "deprecated": false,
+  "description": "A simple and beautiful vuepress Blog & Doc theme.",
+  "gitHead": "e9ed1f242584d12ae1cdbdb15770139666ac4b53",
+  "homepage": "https://vuepress-theme-reco.recoluan.com",
+  "keywords": [
+    "vuepress",
+    "vue",
+    "theme"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "vuepress-theme-reco",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuepress-reco/vuepress-theme-reco.git"
+  },
+  "version": "1.4.6"
+}
