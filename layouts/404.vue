@@ -9,11 +9,11 @@
 </template>
 
 <script>
-const msgs = [
-  `Fun Fact: MenuDocs was founded in 2018 by Connor.`,
-  `Fun Fact: We're here to stay, the end game doesnt exist. Many more games to play!`,
-  `Fun Fact: We're happily sponsored by Oxide Hosting, they're one of the best sponsors any organisations could ask for! `,
-  `Fun Fact: You found a dead end.`
+const defaultMessages = [
+  `There's nothing here.`,
+  `How did we get here?`,
+  `That's a Four-Oh-Four.`,
+  `Looks like we've got some broken links.`
 ]
 
 export default {
@@ -24,7 +24,15 @@ export default {
   },
   methods: {
     getMsg () {
-      return msgs[Math.floor(Math.random() * msgs.length)]
+      const { notFoundMessages, mixNotFoundMessages } = this.$site.themeConfig, messages = [];
+
+      if (notFoundMessages && Array.isArray(notFoundMessages)) {
+        messages.push(...notFoundMessages, ...(mixNotFoundMessages ? defaultMessages : []))
+      } else {
+        messages.push(...defaultMessages)
+      }
+
+      return messages[Math.floor(Math.random() * messages.length)]
     }
   }
 }
