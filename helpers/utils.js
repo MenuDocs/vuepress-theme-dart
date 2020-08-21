@@ -159,12 +159,12 @@ function resolveHeaders (page) {
   }]
 }
 
-export function groupHeaders (headers) {
+export function groupHeaders (headers, depth = 2) {
   // group h3s under h2
   headers = headers.map(h => Object.assign({}, h))
   let lastH2
   headers.forEach(h => {
-    if (h.level === 2) {
+    if (h.level === depth) {
       lastH2 = h
     } else if (lastH2) {
       (lastH2.children || (lastH2.children = [])).push(h)

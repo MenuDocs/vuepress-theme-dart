@@ -42,6 +42,9 @@ export default {
 
     if (item.type === 'auto') {
       return [link, renderChildren(h, item.children, item.basePath, $route, maxDepth)]
+    } else if (item.frontmatter.displayHeaders && item.headers && !hashRE.test(item.path)) {
+      const children = groupHeaders(item.headers, item.frontmatter.sidebarDepth)
+      return [link, renderChildren(h, children, item.path, $route)]
     } else if ((active || displayAllHeaders) && item.headers && !hashRE.test(item.path)) {
       const children = groupHeaders(item.headers)
       return [link, renderChildren(h, children, item.path, $route, maxDepth)]
