@@ -1,5 +1,3 @@
-
-Save New Duplicate & Edit Just Text
 <template>
   <div>
     <i
@@ -94,12 +92,16 @@ export default {
       }
     },
     goToAuthor (author) {
-      window.open(`https://github.com/${author}`)
+      if (Array.isArray(author) && author.length > 1) return window.open(author[1]);
+      window.open(`https://github.com/${this.getName(author)}`);
     },
     withComma (index, type) {
       const names = this.pageInfo.frontmatter[type];
-      if(index !== names.length-1) return `${names[index]},`;
-      else return names[index];
+      if(index !== names.length-1) return `${this.getName(names[index])},`;
+      else return this.getName(names[index]);
+    },
+    getName(arr) {
+      return Array.isArray(arr) && arr.length ? arr[0] : arr
     }
   }
 }
