@@ -53,3 +53,6 @@ Tags will be separated with a comma, before it was separated with a space.
 - Stripping Unnecessary code back
 - Removal of loading pacman
 - Improve Colours on Categories and Tags
+- Change Paint Pallete to Cog
+- Remove Auto or actually make it work
+- Implement "to top" feature directly
