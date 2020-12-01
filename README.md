@@ -48,6 +48,7 @@ This is what will be shown for each.
 Tags will be separated with a comma, before it was separated with a space.
 
 ## Work in progress changes
+stay up to date https://trello.com/b/l4zH3Ne2/menudocs-written-guide
 
 - Accent colours
 - Stripping Unnecessary code back
