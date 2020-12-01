@@ -52,3 +52,4 @@ Tags will be separated with a comma, before it was separated with a space.
 - Accent colours
 - Stripping Unnecessary code back
 - Removal of loading pacman
+- Improve Colours on Categories and Tags
