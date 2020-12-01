@@ -50,4 +50,5 @@ Tags will be separated with a comma, before it was separated with a space.
 ## Work in progress changes
 
 - Accent colours
-
+- Stripping Unnecessary code back
+- Removal of loading pacman
