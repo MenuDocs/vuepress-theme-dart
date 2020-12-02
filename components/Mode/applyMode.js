@@ -26,10 +26,11 @@ export default function applyMode (mode) {
   if (isDarkMode) render('dark')
   if (isLightMode) render('light')
 
-  if (!isDarkMode && !isLightMode) {
-    console.log('You specified no preference for a color scheme or your browser does not support it. I schedule dark mode during night time.')
-    const hour = new Date().getHours()
-    if (hour < 6 || hour >= 18) render('dark')
-    else render('light')
-  }
+  /**
+   * 6 AM - 6 PM: Light mode
+   * 6 PM - 5 AM: Dark mode
+   */
+  const hour = new Date().getHours()
+  if (hour < 6 || hour >= 18) render('dark')
+  else render('light')
 }
