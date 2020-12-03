@@ -10,7 +10,7 @@
           :key="index">
           <router-link :to="item.path">
             <span class="category-name">{{ item.name }}</span>
-            <span class="post-num" :style="{ 'backgroundColor': getOneColor() }">{{ item.pages.length }}</span>
+            <span class="post-num">{{ item.pages.length }}</span>
           </router-link>
         </li>
       </ul>
@@ -43,7 +43,6 @@ import NoteAbstract from '@theme/components/NoteAbstract'
 import ModuleTransition from '@theme/components/ModuleTransition'
 import pagination from '@theme/mixins/pagination'
 import { sortPostsByStickyAndDate, filterPosts } from '@theme/helpers/postData'
-import { getOneColor } from '@theme/helpers/other'
 import moduleTransitonMixin from '@theme/mixins/moduleTransiton'
 
 export default {
@@ -90,8 +89,7 @@ export default {
       this.currentPage = page
       this.$page.currentPage = page
       this._setStoragePage(page)
-    },
-    getOneColor
+    }
   },
 
   watch: {

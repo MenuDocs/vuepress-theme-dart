@@ -4,13 +4,11 @@
       v-for="(item, index) in tags"
       :key="index"
       :class="{'active': item.name == currentTag}"
-      :style="{ 'backgroundColor': getOneColor() }"
       @click="tagClick(item)">{{item.name}}</span>
   </div>
 </template>
 
 <script>
-import { getOneColor } from '@theme/helpers/other'
 
 export default {
   props: {
@@ -27,8 +25,7 @@ export default {
   methods: {
     tagClick (tag) {
       this.$emit('getCurrentTag', tag)
-    },
-    getOneColor
+    }
   }
 }
 </script>
