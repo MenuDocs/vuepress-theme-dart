@@ -7,37 +7,37 @@
     color: $redAccentColor;
   }
 
-  .back-to-ceiling .icon[data-v-4a9283c2] {
+  .back-to-ceiling .icon {
     fill: $redAccentColor !important;
   }
 
   // title hover
-  .abstract-item .title[data-v-6b4d96c3]:after {
+  .abstract-item .title:after {
     background-color: $redAccentColor;
   }
-  .abstract-item .title:hover a[data-v-6b4d96c3]{
+  .abstract-item .title:hover a {
     color: $redAccentColor;
   }
 
   // tag
-  .tags span[data-v-3a4b2da8] {
-    background-color: $redAccentColor;
+  .tags span:hover {
+    color: $redAccentColor;
   }
 
   // category title
-  .categories-wrapper .category-wrapper .category-item a[data-v-1afb3891]:hover {
+  .category-item a:hover {
     background-color: $redAccentColor;
     border-radius: inherit;
   }
 
-  // weird css stuff
-  .categories-wrapper .category-wrapper.category-item[data-v-1afb3891]:hover,
-  .categories-wrapper .category-wrapper .category-item.active[data-v-1afb3891] {
-    background-color: $redAccentColor;
+  .category-item {
+    transition: none !important;
   }
-  .categories-wrapper .category-wrapper .category-item[data-v-1afb3891]:hover,
-  .categories-wrapper .category-wrapper .category-item.active[data-v-1afb3891] {
+
+  // weird css stuff aka category name
+  .category-item.active a {
     background-color: $redAccentColor;
+    border-radius: inherit;
   }
 
   // @parent-theme/components/Home.vue
