@@ -5,7 +5,7 @@ export default {
     }
 
     this.setPageColor();
-    console.log(localStorage.getItem('accent-color'))
+    // console.log(localStorage.getItem('accent-color'))
   },
 
   beforeUpdate() {
