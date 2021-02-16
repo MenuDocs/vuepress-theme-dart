@@ -50,10 +50,9 @@ Tags will be separated with a comma, before it was separated with a space.
 ## Work in progress changes
 stay up to date https://trello.com/b/l4zH3Ne2/menudocs-written-guide
 
-- [x] Remove Auto or actually make it work  
-- [ ] Accent colours  
-- [ ] Stripping Unnecessary code back  
-- [ ] Removal of loading pacman  
-- [ ] Improve Colours on Categories and Tags  
-- [ ] Change Paint Pallete to Cog  
-- [ ] Implement "to top" feature directly  
+- [x] Remove Auto or actually make it work.
+- [ ] Accent colours.
+- [ ] Stripping Unnecessary code back.
+- [ ] Removal of loading pacman.
+- [ ] Improve Colours on Categories and Tags.
+- [ ] Fix the broken tags system
