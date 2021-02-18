@@ -1,0 +1,147 @@
+@import '../variables.styl'
+
+.reco-theme-green {
+  a,
+  p a code,
+  .theme-default-content a code {
+    color: $greenAccentColor;
+  }
+
+  .back-to-ceiling .icon {
+    fill: $greenAccentColor !important;
+  }
+
+  // title hover
+  .abstract-item .title:after {
+    background-color: $greenAccentColor;
+  }
+  .abstract-item .title:hover a {
+    color: $greenAccentColor;
+  }
+
+  // tag
+  .tags span {
+    background-color: $greenAccentColor;
+  }
+
+  // tag
+  span.tag-item {
+    background-color: inherit;
+  }
+
+  // tag
+  span.tag-item:hover {
+    color: $greenAccentColor;
+  }
+
+  // category title
+  .category-item a:hover {
+    background-color: $greenAccentColor;
+    border-radius: inherit;
+  }
+
+  .category-item {
+    transition: none !important;
+  }
+
+  // weird css stuff aka category name
+  .category-item.active a {
+    background-color: $greenAccentColor;
+    border-radius: inherit;
+  }
+
+  // @parent-theme/components/Home.vue
+  .hero .action-button {
+    background-color: $greenAccentColor;
+    border-bottom-color: darken($greenAccentColor, 10%);
+    &:hover {
+      background-color: lighten($greenAccentColor, 10%);
+    }
+  }
+
+  .color-picker .iconfont {
+    color: $greenAccentColor;
+  }
+
+  // @parent-theme/components/NavLinks.vue
+  .nav-links {
+    a,
+    .dropdown-wrapper .dropdown-title,
+    .dropdown-wrapper .nav-dropdown .dropdown-item a {
+      color: inherit;
+
+      &:hover,
+      &.router-link-active {
+        color: $greenAccentColor;
+
+        .iconfont {
+          color: $greenAccentColor;
+        }
+      }
+    }
+
+    .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {
+      border-left-color: $greenAccentColor;
+    }
+  }
+
+  @media (min-width: $MQMobile) {
+    .nav-item > a:not(.external) {
+      &:hover,
+      &.router-link-active {
+        border-bottom-color: $greenAccentColor;
+      }
+    }
+  }
+
+  // @parent-theme/components/PageEdit.vue
+  .page-edit {
+    .edit-link a {
+      color: $greenAccentColor;
+    }
+
+    .last-updated .prefix {
+      color: $greenAccentColor;
+    }
+  }
+
+  // @parent-theme/components/SidebarLink.vue
+  &.yuu-theme-dark {
+    a.sidebar-link {
+      color: $darkAltTextColor;
+    }
+  }
+
+  // @parent-theme/components/SidebarLink.vue
+  a.sidebar-link {
+    color: inherit;
+
+    &:hover {
+      color: $greenAccentColor;
+    }
+
+    &.active {
+      color: $greenAccentColor;
+      border-left-color: $greenAccentColor;
+    }
+  }
+
+  // authors
+  span.author-item:hover {
+    color: $greenAccentColor !important;
+  }
+  // tags
+  span.tag-item:hover {
+    color: $greenAccentColor !important;
+  }
+
+  // sidebars
+  a.sidebar-link.active {
+    background-color: unset !important;
+  }
+
+  // @vuepress/plugin-pwa/lib/SWUpdatePopup.vue
+  .sw-update-popup {
+    border-color: $greenAccentColor;
+  }
+}
