@@ -1,11 +1,12 @@
 <template>
   <div class="mode-options">
-    <h4 class="title">Choose Colour (WIP)</h4>
+    <h4 class="title">Choose Colour</h4>
     <ul class="color-accent-options">
       <li
         v-for="(color, index) in accentColors"
         :key="index"
         :class="getClass(color.color, 'color')"
+        :style="cssVars"
         @click="selectColor(color.color)"
       >{{ color.title }}</li>
     </ul>
@@ -16,6 +17,7 @@
         v-for="(mode, index) in modeOptions"
         :key="index"
         :class="getClass(mode.mode, 'mode')"
+        :style="cssVars"
         @click="selectMode(mode.mode)"
       >{{ mode.title }}</li>
     </ul>
@@ -24,13 +26,14 @@
 
 <script>
 import applyMode from './applyMode'
+import accents from '../../accents.json'
 
 export default {
   name: 'ModeOptions',
 
   data () {
     return {
-      accentColors: [ 
+      accentColors: [
         { color: "red", title: "Red" },
         { color: "blue", title: "Blue" },
         { color: "green", title: "Green" },
@@ -41,14 +44,21 @@ export default {
         { mode: 'auto', title: 'Auto' },
         { mode: 'light', title: 'Light' }
       ],
-      currentColor: null,
+      currentColor: 'blue',
       currentMode: 'auto'
     }
   },
-
+  computed: {
+    cssVars() {
+      return {
+        '--accent-color': accents[this.currentColor]
+      }
+    }
+  },
   mounted () {
     // modePicker 开启时默认使用用户主动设置的模式
     this.currentMode = localStorage.getItem('mode') || this.$themeConfig.mode || 'auto'
+    this.currentColor = localStorage.getItem('accent-color') || 'blue'
 
     // Dark and Light autoswitches
     // 为了避免在 server-side 被执行，故在 Vue 组件中设置监听器
@@ -123,7 +133,7 @@ export default {
         background-color: $accentColor;
         color #fff
       &.active
-        background-color: $accentColor;
+        background-color: var(--accent-color);
         color #fff
       &:not(.mode)
         border-right 1px solid #666
@@ -150,7 +160,7 @@ export default {
         background-color: $accentColor;
         color #fff
       &.active
-        background-color: $accentColor;
+        background-color: var(--accent-color);
         color #fff
       &:not(.color)
         border-right 1px solid #666
