@@ -5,11 +5,7 @@
     <router-link
       :to="$localePath"
       class="home-link">
-      <img
-        class="logo"
-        v-if="$themeConfig.logo"
-        :src="$withBase($themeConfig.logo)"
-        :alt="$siteTitle">
+      <Logo class="logo" />
       <span
         ref="siteName"
         class="site-name"
@@ -38,9 +34,10 @@ import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton'
 import NavLinks from '@theme/components/NavLinks'
 import Mode from '@theme/components/Mode'
+import Logo from './Logo'
 
 export default {
-  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Mode },
+  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Mode, Logo },
 
   data () {
     return {
@@ -96,11 +93,10 @@ $navbar-horizontal-padding = 1.5rem
   a, span, img
     display inline-block
   .logo
-    height $navbarHeight - 1.4rem
+    height: 1.5rem;
     min-width $navbarHeight - 1.4rem
     margin-right 0.8rem
-    vertical-align top
-    border-radius 50%
+    vertical-align: sub;
   .site-name
     font-size 1.2rem
     font-weight 600
