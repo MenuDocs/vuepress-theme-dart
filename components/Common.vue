@@ -78,11 +78,12 @@ import { resolveSidebarItems } from '@theme/helpers/utils'
 import Password from '@theme/components/Password'
 import { setTimeout } from 'timers'
 import moduleTransitonMixin from '@theme/mixins/moduleTransiton'
+import LoadingPage from "@theme/components/LoadingPage";
 
 export default {
   mixins: [moduleTransitonMixin],
 
-  components: { Sidebar, Navbar, Password },
+  components: { Sidebar, Navbar, Password, LoadingPage },
 
   props: {
     sidebar: {
