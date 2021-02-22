@@ -1,6 +1,7 @@
-# VuePress Theme Reco Edit
+# Dart
 
-Just some simple edits done by the MenuDocs team to add a couple features and alter some chinese to english.
+Welcome to DART! A modified vuepress theme from Reco! We've made some amazing changes to this package that you'll enjoy.  
+Check out the theme, [Reco](https://github.com/vuepress-reco/vuepress-theme-reco)
 
 ## Changes you can use
 
