@@ -22,6 +22,7 @@ export default function applyMode (mode) {
 
   const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
   const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  const noThemeMediaQueries = !isDarkMode && !isLightMode
 
   if (isDarkMode) render('dark')
   if (isLightMode) render('light')
@@ -30,7 +31,9 @@ export default function applyMode (mode) {
    * 6 AM - 6 PM: Light mode
    * 6 PM - 5 AM: Dark mode
    */
-  const hour = new Date().getHours()
-  if (hour < 6 || hour >= 18) render('dark')
-  else render('light')
+  if (noThemeMediaQueries) {
+    const hour = new Date().getHours()
+    if (hour < 6 || hour >= 18) render('dark')
+    else render('light')
+  }
 }

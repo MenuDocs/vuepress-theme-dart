@@ -2,11 +2,7 @@
   <div class="home">
     <div class="hero">
       <ModuleTransition>
-        <img
-          v-if="recoShowModule && $frontmatter.heroImage"
-          :style="heroImageStyle || {}"
-          :src="$withBase($frontmatter.heroImage)"
-          alt="hero">
+        <Logo :style="heroImageStyle || {}" />
       </ModuleTransition>
       <ModuleTransition delay="0.04">
         <h1 v-if="recoShowModule && $frontmatter.heroText !== null">{{ $frontmatter.heroText || $title || 'vuePress-theme-reco' }}</h1>
@@ -41,10 +37,11 @@
 import NavLink from '@theme/components/NavLink'
 import ModuleTransition from '@theme/components/ModuleTransition'
 import moduleTransitonMixin from '@theme/mixins/moduleTransiton'
+import Logo from './Logo'
 
 export default {
   mixins: [moduleTransitonMixin],
-  components: { NavLink, ModuleTransition },
+  components: { NavLink, ModuleTransition, Logo },
   computed: {
 
     actionLink () {
@@ -107,7 +104,7 @@ export default {
   }
 
   .features {
-    border-top: 1px solid var(--border-color);;
+    border-top: 1px solid var(--border-color);
     padding: 1.2rem 0;
     margin-top: 2.5rem;
     display: flex;

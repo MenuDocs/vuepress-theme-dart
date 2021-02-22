@@ -1,27 +1,28 @@
 @import '../variables.styl';
 
-.reco-theme-red {
+.reco-theme-purple {
+
   a,
   p a code,
   .theme-default-content a code {
-    color: $redAccentColor;
+    color: $purpleAccentColor;
   }
 
   .back-to-ceiling .icon {
-    fill: $redAccentColor !important;
+    fill: $purpleAccentColor !important;
   }
 
   // title hover
   .abstract-item .title:after {
-    background-color: $redAccentColor;
+    background-color: $purpleAccentColor;
   }
   .abstract-item .title:hover a {
-    color: $redAccentColor;
+    color: $purpleAccentColor;
   }
 
   // tag
   .tags span {
-    background-color: $redAccentColor;
+    background-color: $purpleAccentColor;
   }
 
   // tag
@@ -31,12 +32,12 @@
 
   // tag
   span.tag-item:hover {
-    color: $redAccentColor;
+    color: $purpleAccentColor;
   }
 
   // category title
   .category-item a:hover {
-    background-color: $redAccentColor;
+    background-color: $purpleAccentColor;
     border-radius: inherit;
   }
 
@@ -46,22 +47,22 @@
 
   // weird css stuff aka category name
   .category-item.active a {
-    background-color: $redAccentColor;
+    background-color: $purpleAccentColor;
     border-radius: inherit;
   }
 
   // @parent-theme/components/Home.vue
   .hero .action-button {
-    background-color: $redAccentColor;
-    border-bottom-color: darken($redAccentColor, 10%);
+    background-color: $purpleAccentColor;
+    border-bottom-color: darken($purpleAccentColor, 10%);
     &:hover {
-      background-color: lighten($redAccentColor, 10%);
+      background-color: lighten($purpleAccentColor, 10%);
     }
   }
 
   .color-picker .iconfont {
-      color: $redAccentColor;
-    }
+    color: $purpleAccentColor;
+  }
 
   // @parent-theme/components/NavLinks.vue
   .nav-links {
@@ -72,16 +73,16 @@
 
       &:hover,
       &.router-link-active {
-        color: $redAccentColor;
+        color: $purpleAccentColor;
 
         .iconfont {
-          color: $redAccentColor;
+          color: $purpleAccentColor;
         }
       }
     }
 
     .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {
-      border-left-color: $redAccentColor;
+      border-left-color: $purpleAccentColor;
     }
   }
 
@@ -89,7 +90,7 @@
     .nav-item > a:not(.external) {
       &:hover,
       &.router-link-active {
-        border-bottom-color: $redAccentColor;
+        border-bottom-color: $purpleAccentColor;
       }
     }
   }
@@ -97,11 +98,11 @@
   // @parent-theme/components/PageEdit.vue
   .page-edit {
     .edit-link a {
-      color: $redAccentColor;
+      color: $purpleAccentColor;
     }
 
     .last-updated .prefix {
-      color: $redAccentColor;
+      color: $purpleAccentColor;
     }
   }
 
@@ -117,22 +118,22 @@
     color: inherit;
 
     &:hover {
-      color: $redAccentColor;
+      color: $purpleAccentColor;
     }
 
     &.active {
-      color: $redAccentColor;
-      border-left-color: $redAccentColor;
+      color: $purpleAccentColor;
+      border-left-color: $purpleAccentColor;
     }
   }
 
   // authors
   span.author-item:hover {
-    color: $redAccentColor !important;
+    color: $purpleAccentColor !important;
   }
   // tags
   span.tag-item:hover {
-    color: $redAccentColor !important;
+    color: $purpleAccentColor !important;
   }
 
   // sidebars
@@ -142,22 +143,22 @@
 
   // @vuepress/plugin-pwa/lib/SWUpdatePopup.vue
   .sw-update-popup {
-    border-color: $redAccentColor;
+    border-color: $purpleAccentColor;
   }
 
   .md-logo {
-    fill: $redAccentColor;
+    fill: $purpleAccentColor;
   }
 
   .sidebar::-webkit-scrollbar-thumb {
-    background-color: $redAccentColor;
+    background-color: $purpleAccentColor;
   }
 }
 
-.reco-theme-red::-webkit-scrollbar-thumb:vertical {
-  background-color: $redAccentColor;
+.reco-theme-purple::-webkit-scrollbar-thumb:vertical {
+  background-color: $purpleAccentColor;
 }
 
-.reco-theme-red::-webkit-scrollbar-thumb:horizontal {
-  background-color: $redAccentColor;
+.reco-theme-purple::-webkit-scrollbar-thumb:horizontal {
+  background-color: $purpleAccentColor;
 }
