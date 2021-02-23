@@ -1,6 +1,5 @@
 <template>
   <div id="loader-wrapper" :style="color">
-<!--    <h1>HELLO WORLDDDDDD</h1>-->
     <div class="loader-main" :style="color">
       <div v-for="item in 4" :key="`out${item}`" :style="color">
       </div>
