@@ -26,7 +26,7 @@
     "name": "reco_luan"
   },
   "bugs": {
-    "url": "https://github.com/vuepress-reco/vuepress-theme-reco/issues"
+    "url": "https://github.com/MenuDocs/vuepress-theme-dart/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -42,7 +42,7 @@
   "deprecated": false,
   "description": "A simple and beautiful vuepress Blog & Doc theme.",
   "gitHead": "e9ed1f242584d12ae1cdbdb15770139666ac4b53",
-  "homepage": "https://vuepress-theme-reco.recoluan.com",
+  "homepage": "https://github.com/MenuDocs/vuepress-theme-reco",
   "keywords": [
     "vuepress",
     "vue",
@@ -50,10 +50,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "vuepress-theme-reco",
+  "name": "vuepress-theme-dart",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuepress-reco/vuepress-theme-reco.git"
+    "url": "git+https://github.com/MenuDocs/vuepress-theme-dart.git"
   },
   "version": "1.4.6"
 }
