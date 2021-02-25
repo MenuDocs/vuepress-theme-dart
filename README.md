@@ -1,7 +1,6 @@
 # Dart
 
-Welcome to DART! A modified vuepress theme from Reco! We've made some amazing changes to this package that you'll enjoy.  
-Check out the theme, [Reco](https://github.com/vuepress-reco/vuepress-theme-reco)
+Welcome to DART! A VuePress theme that supports a light & dark themes, multiple colour schemes, and many other useful features. A modified version of [Reco](https://github.com/vuepress-reco/vuepress-theme-reco).  
 
 ## Changes you can use
 
@@ -49,10 +48,4 @@ This is what will be shown for each.
 Tags will be separated with a comma, before it was separated with a space.
 
 ## Work in progress changes
-stay up to date https://trello.com/b/l4zH3Ne2/menudocs-written-guide
-
-- [x] Remove Auto or actually make it work.
-- [x] Accent colours.
-- [ ] Stripping Unnecessary code back.
-- [ ] Improve Colours on Categories and Tags.
-- [ ] Fix the broken tags system
+Stay up to date https://trello.com/b/l4zH3Ne2/dart
