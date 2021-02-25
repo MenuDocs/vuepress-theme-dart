@@ -42,7 +42,6 @@ export default {
     display: inline-block;
     cursor: pointer;
     border-radius: $borderRadius
-    background: #fff;
     color: #fff;
     line-height 13px
     font-size: 13px;
